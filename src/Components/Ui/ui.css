@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: aliceblue;
+    color: white;
+}
+
+.main__container {
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.main__container::after {
+    clear: both;
+}
+
+.child__container__first {
+    float: left;
+    width: 45%;
+    height: 100%;
+    margin: 0 2%;
+}
+
+.add__btn {
+    width: 100%;
+    background-color: #7ecee9;
+    color: white;
+    font-size: 24px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.search__input__box {
+    width: 50%;
+    display: block;
+    margin: auto;
+    background-color: white;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 10px;
+}
+
+.child__container__second {
+    float: left;
+    height: 100%;
+    width: 45%;
+
+}
+
+.data__list {
+    padding: 10px;
+    background-color: white;
+    height: 60px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.data__list>div {
+    float: left;
+    background-color: white;
+    color: black;
+
+    /* display: inline; */
+}
+
+
+.id {
+    padding: 5px 30px 5px 10px;
+}
+
+.react-icons {
+    font-size: 25px;
+}
+
+.user__logo {
+    padding: 5px 10px;
+    width: min(200px, 10%);
+
+}
+
+.user_detail {
+    padding: 0px 20px;
+    width: min(400px, 40%);
+}
+
+.icons__container {
+    padding: 5px;
+    width: min(300px, 35%);
+}
+
+.icons__container>div {
+    float: right;
+
+
+}
+
+.user_detail>div {
+
+    background-color: white;
+    color: black;
+}
+
+.data__list::after {
+    content: '<br/>';
+    clear: both;
+    visibility: hidden;
+}
+
+@media screen and (max-width:778px) {
+    .child__container__first {
+        float: none;
+        width: 100%;
+        padding: 10px 25px;
+        margin: 0;
+    }
+
+    .child__container__second {
+        float: none;
+        width: min(500px, 100%);
+        margin: auto;
+
+    }
+}
+
+@media screen and (max-width:512px) {
+    .child__container__first {
+        padding: 10px;
+    }
+
+    .icons__container {
+        padding: 5px;
+        width: auto;
+    }
+
+    .user_detail {
+        padding: 0;
+        /* width: 45% */
+    }
+
+    .id {
+        padding: 10px;
+    }
+
+    .data__list {
+        height: 80px;
+        padding: 10px 0px;
+    }
+
+    .user__logo {
+        width: auto;
+    }
+}
